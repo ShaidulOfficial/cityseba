@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_85sdp"
+            android:layout_marginHorizontal="@dimen/_7sdp"
+            android:layout_marginVertical="@dimen/_7sdp"
+            android:backgroundTint="@color/col4"
+            android:outlineSpotShadowColor="@color/app_themecolor"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardElevation="@dimen/_8sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/item_lay_background">
+
+                <TextView
+                    android:id="@+id/iconTv_item_Feedback"
+                    android:layout_width="@dimen/_33sdp"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/circle_shape_tv"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black4"
+                    android:textSize="@dimen/_18ssp"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/circleImgItemFeedback"
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/_32sdp"
+                    android:layout_marginTop="@dimen/_26sdp"
+                    android:background="@drawable/green_circle"
+                    android:src="@drawable/green_circle"
+                    app:civ_border_color="@color/black4"
+                    app:civ_border_width="@dimen/_1sdp" />
+
+                <TextView
+                    android:id="@+id/name_tv_itemFeedback"
+                    android:layout_width="@dimen/_185sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/regular"
+                    android:freezesText="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="Md Shaidul Islam"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/descriptionFeedback"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_below="@+id/name_tv_itemFeedback"
+                    android:layout_marginStart="@dimen/_55sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:src="@drawable/message_24" />
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/Feedback_call_btn_item"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/call" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_margin="@dimen/_1sdp"
+            android:background="@color/app_themecolor" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

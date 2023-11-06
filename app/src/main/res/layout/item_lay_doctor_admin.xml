@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardVDoctor"
+        android:layout_width="@dimen/_295sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:backgroundTint="@color/col4"
+        android:outlineSpotShadowColor="@color/app_themecolor1"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_295sdp"
+            android:layout_height="@dimen/_160sdp"
+            android:background="@drawable/item_lay_background"
+            android:padding="@dimen/_2sdp">
+
+            <TextView
+                android:id="@+id/idDoctorItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/kalpurush"
+                android:text="ID:"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/nameDoctorItem"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idDoctorItem"
+                android:layout_alignParentStart="true"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/kalpurush"
+                android:freezesText="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingStart="@dimen/_10sdp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="নামঃ"
+                android:textColor="@color/text_doctoritem"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/qualification_DoctorItem"
+                android:layout_width="@dimen/_245sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameDoctorItem"
+                android:layout_alignParentStart="true"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/kalpurush"
+                android:freezesText="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingStart="@dimen/_10sdp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Cumilla"
+                android:textColor="@color/black3"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/timeDoctorItem"
+                android:layout_width="@dimen/_245sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qualification_DoctorItem"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/kalpurush"
+                android:freezesText="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingStart="@dimen/_10sdp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="সময়ঃ"
+                android:textColor="@color/danger"
+                android:textSize="@dimen/_14ssp" />
+
+
+            <TextView
+                android:id="@+id/hospitalDoctorItem"
+                android:layout_width="@dimen/_245sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/timeDoctorItem"
+                android:layout_alignParentStart="true"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/kalpurush"
+                android:freezesText="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingStart="@dimen/_10sdp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="হাসপাতালের নামঃ"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/mobileDoctorItem"
+                android:layout_width="@dimen/_245sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hospitalDoctorItem"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/kalpurush"
+                android:letterSpacing=".11"
+                android:paddingStart="@dimen/_8sdp"
+                android:text="সিরিয়ালের জন্যঃ- 01860696999"
+                android:textColor="@color/text_doctoritem1"
+                android:textSize="@dimen/_15ssp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/call_btn_itemDoctorAdmin"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_1sdp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/call" />
+
+            <ImageView
+                android:id="@+id/editItemDoctor"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_45sdp"
+                android:src="@drawable/edit_24" />
+
+            <ImageView
+                android:id="@+id/deleteItemDoctor"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_80sdp"
+                android:src="@drawable/delete_forever_24" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginVertical="@dimen/_8sdp"
+        android:background="@color/app_themecolor1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardVDoctor" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

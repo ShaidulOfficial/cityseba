@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "312797625725",
+    "firebase_url": "https://chandpur-eseba-default-rtdb.firebaseio.com",
+    "project_id": "chandpur-eseba",
+    "storage_bucket": "chandpur-eseba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312797625725:android:422e2769c84898d216a014",
+        "android_client_info": {
+          "package_name": "com.kawsar.eseba_chandpur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "312797625725-2i817kl7mgqit3kb0scja95d46c867bu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm_oXYocbegP58vO6_IAIdoeC8Rbz4ThY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "312797625725-2i817kl7mgqit3kb0scja95d46c867bu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312797625725:android:b3a720af0ffb1fa516a014",
+        "android_client_info": {
+          "package_name": "com.kawsar.eseba_chandpur_user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "312797625725-2i817kl7mgqit3kb0scja95d46c867bu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm_oXYocbegP58vO6_IAIdoeC8Rbz4ThY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "312797625725-2i817kl7mgqit3kb0scja95d46c867bu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

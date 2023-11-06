@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.editfragments.HospitalEditFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/admin_toolbar_lin_hospitalEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginVertical="0dp"
+                android:background="@color/app_themecolor"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="1dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/back_btn_admin_hospitalEdit"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/back"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:letterSpacing="0.12"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:text="হাসপাতালের তথ্য হালনাগাদ করুন"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_18ssp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_admin_hospitalEdit"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginVertical="5dp"
+                android:background="@color/app_themecolor" />
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_below="@+id/admin_toolbar_lin_hospitalEdit"
+        android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:hint="name..."
+        android:textSize="@dimen/_20ssp"
+        android:paddingStart="@dimen/_8sdp"
+        android:inputType="textCapWords"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:textSize="@dimen/_20ssp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:hint="Location..."
+        android:paddingStart="@dimen/_8sdp"
+        android:inputType="textCapWords"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:hint="Mobile..."
+        android:textSize="@dimen/_20ssp"
+        android:paddingStart="@dimen/_8sdp"
+        android:inputType="textCapWords"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/hospitalEditBtn"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:text="Update"
+        android:letterSpacing="0.12"
+        android:textColor="@color/white"
+        android:layout_marginVertical="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_100sdp"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_20ssp"
+        android:background="@drawable/login_btn_bg"/>
+</LinearLayout>
+        <LinearLayout
+            android:id="@+id/layNonet_hospitalAdmin_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_below="@+id/admin_toolbar_lin_hospitalEdit"
+             android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <include layout="@layout/no_internet" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

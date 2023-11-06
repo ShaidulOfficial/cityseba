@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_con_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_5sdp">
+
+    <TextView
+        android:id="@+id/name_tv_tourist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginVertical="@dimen/_8sdp"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/kalpurush"
+        android:freezesText="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:minHeight="48dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Chandpur Tourist spot"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/touristDialogPhoto"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="138dp"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:padding="@dimen/_3sdp"
+        android:scaleType="centerInside"
+        android:src="@drawable/chandpur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_tv_tourist" />
+
+    <View
+        android:id="@+id/viewSeemoretourist"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_160sdp"
+        android:background="@color/app_themecolor1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollVfeedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_290sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewSeemoretourist">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:padding="@dimen/_4sdp">
+
+            <TextView
+                android:id="@+id/description_tv_tourist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/kalpurush"
+                android:paddingStart="@dimen/_4sdp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:text="Description"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="normal"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/touristWebUrl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@color/col2"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/kalpurush"
+        android:freezesText="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Website"
+        android:textAlignment="center"
+        android:textColor="@color/col1"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollVfeedback" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

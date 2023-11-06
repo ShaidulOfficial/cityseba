@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.admin_fragments.NewspaperFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/toolbar_lin_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@color/app_themecolor"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_1sdp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/back_btn_admin_news"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:id="@+id/news_head_title_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kalpurush"
+                    android:letterSpacing="0.12"
+                    android:paddingEnd="@dimen/_32sdp"
+                    android:text="খবর"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_22ssp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLay_newsAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_below="@+id/toolbar_lin_news"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_1sdp">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout_newsAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_themecolor"
+                android:textAlignment="center"
+                app:tabIconTint="@color/white"
+                app:tabIndicatorColor="@color/tab_select_color"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/tab_select_color"
+                app:tabTextColor="@color/white" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager_newsAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appBarLay_newsAdmin"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true" />
+
+
+    </RelativeLayout>
+</FrameLayout>

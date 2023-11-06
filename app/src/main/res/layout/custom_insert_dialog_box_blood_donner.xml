@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_con_lay"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_270sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:padding="@dimen/_3sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/head_title_blood_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:fontFamily="@font/kalpurush"
+            android:letterSpacing=".2"
+            android:text="Information"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name_edt_blood"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:hint="ক্লাব বা ফোরামের নাম..."
+            android:inputType="textCapWords|textAutoCorrect|textFilter|textPersonName|textAutoComplete"
+            android:paddingStart="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp" />
+
+          <EditText
+            android:id="@+id/fbPage_edt_blood"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:hint="ফেসবুক পেইজ..."
+            android:inputType="textMultiLine|textFilter|textAutoComplete"
+            android:maxHeight="@dimen/_120sdp"
+            android:maxLines="3"
+            android:paddingStart="@dimen/_10sdp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp" />
+
+        <EditText
+            android:id="@+id/webUrl_edt_blood"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:hint="ওয়েব সাইট..."
+            android:inputType="textMultiLine|textFilter|textAutoComplete"
+            android:maxHeight="@dimen/_120sdp"
+            android:maxLines="3"
+            android:paddingStart="@dimen/_10sdp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancel_btn_blood"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_btn_bg"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit_btn_blood"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_btn_bg"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

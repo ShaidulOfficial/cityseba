@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+              android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitleNoNet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:text="Something Went Wrong!"
+            android:textColor="@color/danger"
+            android:textSize="@dimen/_20ssp"
+            android:fontFamily="@font/eng_regu"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tvDesNoNet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:text="It seems that there is no active internet connection..."
+            android:textColor="@color/black1"
+            android:textSize="@dimen/_15ssp"
+            android:fontFamily="@font/eng_regu"
+            android:textStyle="normal" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieNoNet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_240sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:scaleType="centerInside"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/no_internet"
+            app:lottie_repeatMode="restart" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/nointbg"
+                android:fontFamily="@font/regular"
+                android:inputType="textMultiLine"
+                android:scrollbarStyle="insideInset"
+                android:justificationMode="inter_word"
+                android:padding="@dimen/_10sdp"
+                android:text="বিঃদ্রঃ এই সেবাটি পেতে আপনার ডিভাইসে অবশ্যই নেট কনেকশন থাকতে হবে।দয়া করে আপনার ডিভাইসে নেট কানেকশন দিন।ধন্যবাদ।"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/_16ssp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

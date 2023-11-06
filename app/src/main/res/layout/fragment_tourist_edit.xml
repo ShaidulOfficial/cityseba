@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.edit_fragments.TouristEditFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/editLin_tourist"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/app_themecolor"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_1sdp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/back_btn_edit_tourist"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/edit_head_title_tourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kalpurush"
+                android:letterSpacing="0.12"
+                android:paddingRight="@dimen/_20sdp"
+                android:text="Update Data"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_22ssp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/head_title_edit_tourist"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginVertical="@dimen/_3sdp"
+            android:fontFamily="@font/kalpurush"
+            android:letterSpacing=".2"
+            android:text="Information"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_4sdp">
+
+                <ImageView
+                    android:id="@+id/touristPhotoImv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/item_lay_background"
+                    android:padding="@dimen/_5sdp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/photo_camera_24" />
+
+                <EditText
+                    android:id="@+id/name_edtTouristEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:hint="নাম..."
+                    android:inputType="textCapWords|textAutoCorrect|textFilter|textPersonName|textAutoComplete"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18ssp" />
+
+                <EditText
+                    android:id="@+id/webUrl_edtTouristEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:hint="ওয়েবসাইট লিংক..."
+                    android:inputType="text|textAutoCorrect|textFilter|textPersonName|textAutoComplete"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18ssp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:hint="ঠিকানা...">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/location_edtTouristEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:inputType="textMultiLine|textCapWords|text"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textSize="@dimen/_18ssp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:hint="ডেসক্রিপশন...">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/description_edtTouristEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:inputType="textMultiLine|textCapWords|text"
+                        android:lines="6"
+                        android:maxLines="6"
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:textSize="@dimen/_18ssp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/cancel_btntouristEdit"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_btn_bg"
+                        android:text="Cancel"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/submit_btntouristEdit"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_btn_bg"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

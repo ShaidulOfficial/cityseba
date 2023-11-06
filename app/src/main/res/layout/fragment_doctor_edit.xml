@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.fragments.edit_fragments.DoctorEditFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/editLin_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/app_themecolor"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_1sdp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/back_btn_edit_doctor"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/edit_head_title_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kalpurush"
+                android:letterSpacing="0.12"
+                android:paddingRight="@dimen/_20sdp"
+                android:text="Update Data"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_22ssp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:padding="@dimen/_3sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editLin_doctor">
+            <TextView
+                android:id="@+id/head_title_doctorEdit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:fontFamily="@font/kalpurush"
+                android:letterSpacing=".2"
+                android:text="Information"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/name_edt_doctorEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:hint="নামঃ..."
+                android:inputType="textCapWords|textMultiLine|textFilter|textAutoComplete"
+                android:maxHeight="@dimen/_120sdp"
+                android:maxLines="2"
+                android:paddingStart="@dimen/_8sdp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp" />
+            <EditText
+                android:id="@+id/qualification_edt_doctorEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:hint="পেশা যোগ্যতাঃ..."
+                android:inputType="textCapWords|textMultiLine|textFilter|textAutoComplete"
+                android:maxHeight="@dimen/_120sdp"
+                android:maxLines="3"
+                android:paddingStart="@dimen/_8sdp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp" />
+            <EditText
+                android:id="@+id/hospitalname_edt_doctorEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:hint="হাসপাতালের নামঃ..."
+                android:inputType="textCapWords|textMultiLine|textFilter|textAutoComplete"
+                android:maxHeight="@dimen/_120sdp"
+                android:maxLines="3"
+                android:paddingStart="@dimen/_8sdp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp" />
+            <EditText
+                android:id="@+id/chamberTime_edt_doctorEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:hint="রুগী দেখার সময়..."
+                android:inputType="textCapWords|textMultiLine|textFilter|textAutoComplete"
+                android:maxHeight="@dimen/_120sdp"
+                android:maxLines="3"
+                android:paddingStart="@dimen/_8sdp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp" />
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="11"
+                app:endIconMode="clear_text"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mobile_editDoctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:hint=" সিরিয়ালের জন্য মোবাইল..."
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18ssp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cancel_btn_edit_doctor"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_btn_bg"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20ssp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/submit_btn_edit_doctor"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_btn_bg"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20ssp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

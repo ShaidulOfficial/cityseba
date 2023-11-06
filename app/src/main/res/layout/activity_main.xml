@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".views.activities.MainActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="@color/app_themecolor"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/_2sdp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imageMenu"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:src="@drawable/menu"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/textTitleTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:clickable="true"
+                    android:ellipsize="marquee"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/regular"
+                    android:freezesText="true"
+                    android:letterSpacing="0.12"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="@string/tool_title_txt"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:background="@drawable/datebg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_2sdp">
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="January,23"                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold"
+
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/appBar"
+                android:background="@color/white"
+                android:visibility="visible"
+                tools:context=".views.activities.MainActivity">
+
+                <FrameLayout
+                    android:id="@+id/framlayout_user_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:padding="@dimen/_1sdp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_View"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/header"
+            app:itemIconSize="@dimen/_22sdp"
+            app:itemIconTint="@color/app_themecolor"
+            app:menu="@menu/navigation_menu" />
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</RelativeLayout>

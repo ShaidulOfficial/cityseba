@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.admin_fragments.paribahan.RailFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="'Bangladesh RailWay'\nবাংলাদেশ রেলওয়ে"
+        android:textAlignment="center"
+        android:textColor="@color/app_themecolor"
+        android:textSize="@dimen/_20ssp" />
+
+</FrameLayout>
